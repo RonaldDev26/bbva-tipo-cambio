@@ -17,6 +17,10 @@ import lombok.Setter;
 public class TipoCambioMontoRequest {
     
     private Double monto;
+    
+    //@NotEmpty(message = "El campo moneda de Origen no debe ser vacio o nulo")
     private String monedaOrigen;
+    
+    //@NotEmpty(message = "El campo moneda de Destino no debe ser vacio o nulo")
     private String monedaDestino;
 }

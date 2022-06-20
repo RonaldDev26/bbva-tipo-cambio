@@ -9,7 +9,9 @@ public interface TipoCambioService {
     
     Mono<TipoCambioDto> guardarTipoCambio(TipoCambioRequest tipoCambioRequest);
     
-    Mono<TipoCambioDto> obtenerTipoCambio(TipoCambioMontoRequest tipoCambioRequest , Long id);
+    Mono<TipoCambioDto> obtenerTipoCambioId(TipoCambioMontoRequest tipoCambioRequest , Long id);
+    
+    Mono<TipoCambioDto> obtenerTipoCambio(TipoCambioMontoRequest tipoCambioRequest);
     
     Mono<TipoCambioDto> actualizarTipoCambio(TipoCambioRequest tipoCambioRequest , Long id);
     

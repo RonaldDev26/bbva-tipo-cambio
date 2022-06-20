@@ -8,4 +8,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface TipoCambioRepository extends CrudRepository<TipoCambioEntity,Long> {
     
+    TipoCambioEntity findByMonedaOrigenAndMonedaDestino(String monedaOrigen , String monedaDestino);
+    
 }
